@@ -26,7 +26,7 @@ lmain.pack(pady=10)
 def generate():
     prompt_text = prompt_entry.get().strip()
     if not prompt_text:
-        prompt_entry.configure(text="⚠️ Please enter a prompt.")
+        prompt_entry.configure(text="Please enter a prompt.")
         return
     try:
         generate_button.configure(state="disabled", text="Generating...")
